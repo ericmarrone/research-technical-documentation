@@ -102,3 +102,35 @@ x.has_key?("hello") #=> true
 
 x = { "hello" => 100, "goodbye" => 0 }
 x.has_value?(100) #=> true
+
+
+####TIME
+
+#now
+
+#arguments: if no argument specified outputs current date/TIME
+#   can accept year,month,day,hour,min,sec,offset as arguments
+
+#returns a time object
+a = Time.new
+p a
+
+
+#### File
+
+## exist?
+
+# arguments needs a file_name
+# output true  or false
+
+File.exist?("research.rb")
+
+
+## extname
+
+#arguments path of file
+
+#output returns the extension in a string
+
+
+p File.extname("research.rb")
