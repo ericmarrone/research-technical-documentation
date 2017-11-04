@@ -23,7 +23,7 @@ puts "Hello my name is Eric".split(" ")
 ## start_with?
 
 # Arguments name:prefix. prefix required. data type: string
-# Return type: boolean
+# Return type: boolean - true or false
 puts "Canada".start_with?("Can")
 
 
@@ -69,3 +69,36 @@ numbers = [1, 2, 3, 5, 6,]
 
 numbers.pop
 p numbers
+
+#### Hash
+
+##to_a
+
+#Arguments requires a hash with keys and values.
+#Return array (nested)
+
+
+nhl_teams = { "Toronto" => "Maple Leafs", "Montreal" => "Canadiens", "Vancouver" => "Canucks" }
+x = nhl_teams.to_a
+
+p x
+
+## has_key?
+
+#Arguments hash key as argument
+
+
+#return boolean - true of false
+
+x = { "hello" => 100, "goodbye" => 0 }
+x.has_key?("hello") #=> true
+
+## has_value?
+
+#Arguments hash value as argument
+
+
+#return boolean - true of false
+
+x = { "hello" => 100, "goodbye" => 0 }
+x.has_value?(100) #=> true
